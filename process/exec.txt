@@ -1,0 +1,6 @@
+cat /etc/passwd
+
+char *argv[] = {"cat","/etc/passwd",NULL};
+char *evn[] = {"PATH = /bin","SHELL = bash",NULL};
+
+execve("/bin/cat",argv,evn);
